@@ -10,11 +10,11 @@ document.getElementById('cartOFNav').addEventListener('click',()=>{
 })
 // login
 document.getElementById('loginpage').addEventListener('click',()=>{
-  window.location.href = './login/login.html'
+  window.location.href = '../login/login.html'
 })
 // signup
 document.getElementById('Signuppage').addEventListener('click',()=>{
-  window.location.href = './signup/signup.html'
+  window.location.href = '../signup/signup.html'
 })
 
 // if the user has already ounce login then
@@ -27,12 +27,12 @@ document.getElementById('Loginbtn').addEventListener('click',()=>{
     alert('Please do Signup!!!!')
   }
   else{
-    window.location.href = "./login/login.html"
+    window.location.href = "../login/login.html"
   }
 })
 
 // added onclick function on signup button
 
 document.getElementById('signupBtn').addEventListener('click',()=>{
-  window.location.href = "./signup/signup.html"
+  window.location.href = "../signup/signup.html"
 })
