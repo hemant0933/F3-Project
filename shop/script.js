@@ -131,7 +131,7 @@ var myData = [];
 
 
 // function getdata(){
- fetch("./F3-Project/database/data.json")
+ fetch("../database/data.json")
   .then((response) => response.json())
   .then((data) => {
     localStorage.setItem("data", JSON.stringify(data));
@@ -294,7 +294,7 @@ var myData = [];
 // }
 
 
-getdata();
+//getdata();
 // filtering on the basis of rating
 rating.oninput = function () {
   const data = JSON.parse(localStorage.getItem("data"));
