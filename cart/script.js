@@ -12,7 +12,7 @@ let sumOfPrice = 0;
 let result = 0;
 
 function init(){
-  console.log('15')
+  // console.log('15')
   if(getproduct.length !== 0){
     loadMyData();
 }
@@ -41,6 +41,8 @@ function loadMyData() {
     result = total.replace(/[a-zA-Z]/g, "");
     result = result.replace(":", "");
     sumOfPrice += Number(result);
+    console.log(sumOfPrice)
+    localStorage.setItem("totalCartPrice",JSON.stringify(sumOfPrice));
 
     p1.innerHTML += `
     <div class="checkList">${Product.id} &nbsp; <p>${Product.ProductTitle}</p>

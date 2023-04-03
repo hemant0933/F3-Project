@@ -76,6 +76,7 @@ function CreateNewAccount() {
 
   let signupData = JSON.stringify(arr);
   localStorage.setItem("files", signupData);
+  console.log("hi")
   window.location.href = "../login/login.html";
 }
 

@@ -4,7 +4,7 @@
 // Add button code documentation:
 // https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/build-integration#code-to-add-pay-button
 
-let totalprice = JSON.parse(localStorage.getItem('totalprice'))||[];
+let totalprice = JSON.parse(localStorage.getItem('totalCartPrice'));
 
 console.log(totalprice);
 
@@ -12,7 +12,7 @@ console.log(totalprice);
 document.getElementById("rzp-button1").onclick = function (e) {
   var options = {
     key: "rzp_test_KzC8tI0DjNcjSD", // Enter the Key ID generated from the Dashboard
-    amount: 300 * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    amount: parseInt(totalprice,10) * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     currency: "INR",
     name: "MyShop Checkout",
     description: "This is your order", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
