@@ -3,21 +3,20 @@ let p1 = document.getElementById("p1");
 let totalamount = document.getElementById("totalamount");
 let removeBtn = document.getElementById("removeBtn");
 let PaymentBtn = document.getElementById('ClicktoCheckOut');
-var getproduct = JSON.parse(localStorage.getItem("MyCartItem")) || [];
+var getproduct = JSON.parse(localStorage.getItem("MyCartItem"));
+
+console.log('i');
 console.log(getproduct);
 let total = 0;
 let sumOfPrice = 0;
 let result = 0;
 
-if(getproduct !== []){
+if(getproduct !== null){
     loadMyData();
-    // let chprice = JSON.stringify(sumOfPrice);
-    // localStorage.setItem('totalprice',chprice);
 }
-else if(getproduct == []){
+else if(getproduct == null){
   document.getElementById('nodata').innerHTML = 'Zero Items In the Cart'
 }
-
 
 function loadMyData() {
   getproduct.map((Product) => {

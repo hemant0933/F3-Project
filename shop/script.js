@@ -278,7 +278,7 @@ var myData = [];
           shoppingElement.getElementsByClassName("productImag")[0].src;
           ++id;
 
-        console.log(ProductImage, ProductTitle, ProductPrice,id);
+        // console.log(ProductImage, ProductTitle, ProductPrice,id);
 
         let obj = {
           ProductTitle,
