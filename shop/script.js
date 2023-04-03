@@ -131,7 +131,7 @@ var myData = [];
 
 
 // function getdata(){
- fetch("https://hemant0933.github.io/F3-Project/database/data.json")
+ fetch("./F3-Project/database/data.json")
   .then((response) => response.json())
   .then((data) => {
     localStorage.setItem("data", JSON.stringify(data));
