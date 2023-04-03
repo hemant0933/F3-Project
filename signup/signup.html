@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION  -->
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="/" id="home">Home</a>
+        <a href="/" id="loginpage">Login</a>
+        <a href="/">Signup</a>
+        <a href="/" id="cartOFNav">My Cart</a>
+      </div>
+    </nav>
+    <!-- SECTION - 1 -->
+    <div class="section1">
+      <div class="login-title">Signup</div>
+      <div class="inputfields">
+          <input type="text" name="" id="fname" placeholder="First name" /><br />
+          <div id="errorfname" style="display: none; color: red; margin-bottom: 10px;">Please fill the First name.</div>
+
+          <input type="text" name="" id="lname" placeholder="Last name" /><br />
+          <div id="errorlast" style="display: none; color: red; margin-bottom: 10px;">Please fill the last name</div>
+
+          <input type="email" name="" id="email" placeholder="Email" /><br />
+          <div id="erroremail" style="display: none; color: red; margin-bottom: 10px;">Please enter a valid email</div>
+
+          <input type="password" name="" id="password" placeholder="Password" /><br />
+          <div id="errorPassword" style="display: none; color: red; margin-bottom: 10px;">Please fill the password</div>
+          
+          <input type="password" name="" id="confpassword" placeholder="Confirm Password"/><br />
+          <div id="errorConfpassword" style="display: none; color: red; margin-bottom: 10px;">Not matching</div>
+      </div>
+
+      <button class="signupbtn" onclick="CreateNewAccount()"> Signup </button>
+      <div id="Mainerror" style="display: block; color: red; margin-bottom: 10px;"></div>
+
+    </div>
+
+    <script src="signup.js" async defer></script>
+  </body>
+</html>

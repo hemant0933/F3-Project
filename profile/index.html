@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    
+    <nav>
+      <div class="brand">
+        <a href="/">Shopping Cart</a>
+      </div>
+      <div class="nav-items">
+        <a href="/shop/index.html">Home Page</a>
+        <a href="/cart/index.html">Cart Page</a>
+      </div>
+    </nav>
+    <!-- SECTION - 1 -->
+    <div class="section1" id="signup">
+      <div class="profile-title"><strong>My Profile</strong></div>
+        <div class="inputfields">
+          <h6><b>Name:-</b> &nbsp;<span id="username"></span></h6>
+          <h6>Gmail id:-<span id="gmail"></span></h6>
+        </div>
+      <button class="saveBtn">Save Info</button>
+      <button class="Logoutbtn" onclick="LogoutFromPage()">Logout</button>
+      <div
+      class="Mainerror"
+      style="display: none; color: red; margin-bottom: 10px;"
+    ></div>
+    </div>
+
+
+
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
