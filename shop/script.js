@@ -287,6 +287,7 @@ var myData = [];
           id
         };
         addCartObj.push(obj);
+        console.log(addCartObj);
         localStorage.setItem("MyCartItem", JSON.stringify(addCartObj));
       });
     }

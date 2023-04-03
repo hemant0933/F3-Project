@@ -5,18 +5,23 @@ let removeBtn = document.getElementById("removeBtn");
 let PaymentBtn = document.getElementById('ClicktoCheckOut');
 var getproduct = JSON.parse(localStorage.getItem("MyCartItem"));
 
-console.log('i');
-console.log(getproduct);
+// console.log('i');
+// console.log(getproduct);
 let total = 0;
 let sumOfPrice = 0;
 let result = 0;
 
-if(getproduct !== null){
+function init(){
+  console.log('15')
+  if(getproduct.length !== 0){
     loadMyData();
 }
-else if(getproduct == null){
+else if(getproduct.length == 0){
+  console.log('no data')
   document.getElementById('nodata').innerHTML = 'Zero Items In the Cart'
 }
+}
+init()
 
 function loadMyData() {
   getproduct.map((Product) => {
