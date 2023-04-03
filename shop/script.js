@@ -129,7 +129,9 @@ electrobtn.addEventListener("click", () => {
 
 var myData = [];
 
-fetch("/database/data.json")
+
+// function getdata(){
+ fetch("https://hemant0933.github.io/F3-Project/database/data.json")
   .then((response) => response.json())
   .then((data) => {
     localStorage.setItem("data", JSON.stringify(data));
@@ -289,7 +291,10 @@ fetch("/database/data.json")
       });
     }
   });
+// }
 
+
+getdata();
 // filtering on the basis of rating
 rating.oninput = function () {
   const data = JSON.parse(localStorage.getItem("data"));
